@@ -1,0 +1,10 @@
+Estando presente todo el grupo excepto Álvaro llegamos a las siguientes conclusiones:
+- La primera historia de usuario sería: Tener un espacio privado donde se guardan tus vídeos visualizados y subidos, 
+porque es necesario tener una cuenta antes de poder subir vídeos y que haya vídeos disponibles; aunque el usuario no tenga
+una cuenta.
+- La segunda historia de usuario sería: Subir vídeos, ya que va a ser la funcionalidad principal de bananatube.
+- La tercera historia de usuario sería: Reproducir vídeos porque es el objetivo principal de nuestra aplicación web.
+- La cuarta historia de usuario sería: Buscar vídeos a través de un cuadro de texto que
+contenga una lupa, ya que queremos poder encontrar más vídeos aparte de los propios, filtrados por su título.
+- La quinta historia de usuario sería: Filtrar los vídeos según el número de visualizaciones, duración del vídeo y fecha de publicación, 
+ya que así podemos limitar la búsqueda según criterios más específicos.
