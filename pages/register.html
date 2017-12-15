@@ -8,49 +8,45 @@
     ::placeholder{
       text-align: center;
     }
-
-    input ::placeholder :focus{
-      color: transparent;
-    }
   </style>
 </head>
 
 <body>
   <!--login-->
   <div class="container">
-    <form id="login" action="#" method="post" style="text-align:center"> <!--TODO: action -->
+    <form id="login" action="#" method="post" style="text-align:center"/> <!--TODO: action -->
       <h2>Regístrate</h2>
 
       <!--nombre y apellido-->
       <div>
-        <label for="nameandlast"><img width="20px" src="../icons/user.png" alt="img_user"></label>      <!--TODO: label para que lo lea-->
-        <input id="nameandlast" type="text" name="name" placeholder="Nombre y Apellido" pattern="[A-Za-z]{3,12}" onfocus="placeholder=''" onblur="placeholder='Nombre y Apellido'" required value="">
+        <label for="nameandlast"><img width="20px" src="../icons/user.png" alt="img_user"/></label>      <!--TODO: label para que lo lea-->
+        <input id="nameandlast" type="text" name="name" placeholder="Nombre y Apellido" pattern="[A-Za-z]{3,12}" onfocus="placeholder=''" onblur="placeholder='Nombre y Apellido'" required value=""/>
       </div>
       <!--email-->
       <div>
-        <label for="email"><img width="20px" src="../icons/email.png" alt="img_email"></label>
-        <input id="email" type="email" name="email" placeholder="Email" onfocus="placeholder=''" onblur="placeholder='Email'"required value="">
+        <label for="email"><img width="20px" src="../icons/email.png" alt="img_email"/></label>
+        <input id="email" type="email" name="email" placeholder="Email" onfocus="placeholder=''" onblur="placeholder='Email'"required value=""/>
       </div>
       <!--contraseña-->
       <div>
-        <label for="pass"><img width="20px" src="../icons/pass.png" alt="img_pass"></label>
-        <input id="pass" type="password" name="password" placeholder="Contraseña" pattern="[a-z0-9]{3,12}" onfocus="placeholder=''" onblur="placeholder='Contraseña'" required value="">
+        <label for="pass"><img width="20px" src="../icons/pass.png" alt="img_pass"/></label>
+        <input id="pass" type="password" name="password" placeholder="Contraseña" pattern="[a-z0-9]{3,12}" onfocus="placeholder=''" onblur="placeholder='Contraseña'" required value=""/>
       </div>
       <!--repetir contraseña-->
       <div>
-        <label for="pass2"><img width="20px" src="../icons/pass.png" alt="img_pass"></label>
-        <input id="pass2" type="password" name="pass2" placeholder="Repite Contraseña" pattern="[a-z0-9]{3,12}" onfocus="placeholder=''" onblur="placeholder='Repite Contraseña'"required value="">
+        <label for="pass2"><img width="20px" src="../icons/pass.png" alt="img_pass"/></label>
+        <input id="pass2" type="password" name="pass2" placeholder="Repite Contraseña" pattern="[a-z0-9]{3,12}" onfocus="placeholder=''" onblur="placeholder='Repite Contraseña'"required value=""/>
       </div>
       <!--fecha de nacimiento-->
       <div>
-        <label for="date"><p><img width="20px" src="../icons/clock.png" alt="img_calendar" />Fecha de Nacimiento</p></label>
-        <input id="date" type="date" name="fecha" required value="">
+        <label for="date"><p><img width="20px" src="../icons/clock.png" alt="img_calendar"/>Fecha de Nacimiento</p></label>
+        <input id="date" type="date" name="fecha" required value=""/>
       </div>
       <br>
 
 
       <!--Boton Registrarse-->
-      <input type="submit" name="registro" value="Registrarse">
+      <input type="submit" name="registro" value="Registrarse"/>
     </form>
   </div>
 </body>
