@@ -1,9 +1,75 @@
+
 header {
     overflow: hidden;
 }
 
+/* Intento colocar los blockes dentro de la pagina */
 
 header div {
-    float:left;
-    display:inline-block;
+    float: left;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.logoescrito {
+    width: 20%;
+    margin-left:2%;
+}
+
+/* Style the search box inside the navigation bar */
+
+.searchbar {
+    width: 60%;
+    text-align: left;
+}
+
+.search {
+  width: 80%;
+  position: relative
+}
+
+.searchterm {
+  float: left;
+  width: 100%;
+  border: 3px solid #f8f4a6;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchterm:focus{
+  color: #a7e2e3;
+}
+
+.searchbutton {
+  position: absolute;  
+  right: -50px; 
+  width: 40px;
+  height: 36px;
+  border: 1px solid #f8f4a6;
+  background: yellow;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+/* /.searchbar{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+/* Style the search box inside the navigation bar */
+
+.login {
+    width: 20%
+    text-align:right;
 }
