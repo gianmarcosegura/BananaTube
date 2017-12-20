@@ -1,1 +1,8 @@
-test header
+header {
+    overflow: hidden;
+}
+
+header div {
+    float:left;
+    display:inline-block
+}
