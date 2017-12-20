@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Regístro</title>
+  <title>Editar perfil</title>
 </head>
 
 <body>
@@ -16,12 +16,12 @@
     <br>
     <div>
       <label for="name">Nombre</label>
-      <input id="name" type="text" name="firstname">
+      <input id="name" type="text" name="firstname" pattern="[A-Za-z]{3,30}">
     </div>
     <br>
     <div>
       <label for="lastname">Apellido/s</label>
-      <input id="lastname" type="text" name="lastname">
+      <input id="lastname" type="text" name="lastname" pattern="[A-Za-z]{2,35}">
     </div>
     <br>
     <div>
@@ -31,7 +31,7 @@
     <br>
     <div>
       <label for="pass">Contraseña</label>
-      <input id="pass" type="password" name="contraseña">
+      <input id="pass" type="password" name="contraseña" pattern="(?=.*\d)(?=.*[a-z]).{6,15}">
     </div>
     <br>
     <div>
@@ -55,8 +55,6 @@
     <div>
         <input type="submit" id="submit" name="submit" value="Guardar"/>
     </div>
-
-
     </form>
   </div>
 </body>
