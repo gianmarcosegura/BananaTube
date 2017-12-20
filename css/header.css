@@ -1,6 +1,8 @@
 
 header {
     overflow: hidden;
+    border-bottom:  3px solid #f8f4a6;
+    padding-bottom: 1%;
 }
 
 /* Intento colocar los blockes dentro de la pagina */
@@ -21,6 +23,10 @@ header div {
 .searchbar {
     width: 60%;
     text-align: left;
+}
+
+.imgsearchbar {
+    width: 20%;
 }
 
 .search {
@@ -72,4 +78,9 @@ header div {
 .login {
     width: 20%
     text-align:right;
+}
+
+.login a {
+    text-decoration: none;
+    color: red;
 }
