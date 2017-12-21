@@ -1,4 +1,7 @@
-
+body{
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
 header {
     overflow: hidden;
     border-bottom:  3px solid #f8f4a6;
@@ -13,7 +16,6 @@ header div {
     display: inline-block;
     margin-top: 8px;
 }
-
 .logoescrito {
     width: 20%;
     margin-left:2%;
@@ -35,20 +37,22 @@ header div {
 }
 
 .imgsearchbar {
-  width: 15%;
+  width: 4%;
   display: inline-block;
   text-align: right;
   box-sizing: border-box;
+  position: static;
 }
 
 .search {
   width: 70%;
   display: inline-block;
+  position:relative;
 }
 
 .searchterm {
   float: left;
-  width: 70%;
+  width: 95%;
   border: 3px solid #f8f4a6;
   padding: 5px;
   height: 40%;
@@ -64,7 +68,7 @@ header div {
 }
 
 .searchbutton {
-    width: 3%;
+    width: 10%;
     height:30px;
     background: #f8f4a6;
     border-radius: 5px;
