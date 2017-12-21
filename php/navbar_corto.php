@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-      <meta charset="utf-8"/>
-      <title>Bananatube</title>
-      <link rel="stylesheet" href="navbar.css" media="screen"/>
-      <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand" rel="stylesheet">
-</head>
-   
-<body class="container">
-    <nav id="navbar">
+<nav id="navbar">
            
             <!--He creado esta nueva categoría del menú, porque creo que debería acompañar al click en el logo, ya que no es tan intuitivo-->
             <div id="inicio" class="over">
@@ -36,6 +26,3 @@
                 <p><a href="#">Ajustes</a></p>
             </div>
     </nav>
-    
-</body>
-</html>
