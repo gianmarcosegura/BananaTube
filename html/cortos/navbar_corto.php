@@ -1,11 +1,11 @@
-<nav id="navbar">
-           
+<nav id="navbar" class="container">
+
             <!--He creado esta nueva categoría del menú, porque creo que debería acompañar al click en el logo, ya que no es tan intuitivo-->
             <div id="inicio" class="over">
                 <div><img class="icon" src="imagenes/homepage.png"/></div>
                 <p><a href="#">Inicio</a></p>
             </div>
-            
+
             <br/>
             <div id="categorias" class="over">
                 <ul>
@@ -20,7 +20,7 @@
                 </ul>
             </div>
             <br/>
-            
+
             <div id="ajustes" class="over">
                 <div><img class="icon" src="imagenes/settings-work-tool.png"/></div>
                 <p><a href="#">Ajustes</a></p>

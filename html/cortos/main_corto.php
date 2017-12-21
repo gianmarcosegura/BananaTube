@@ -1,4 +1,4 @@
-<section>
+<section class="container">
        <!--Este será el div superior-->
         <div>
             <h3><a href="#">Más populares</a></h3>
@@ -33,7 +33,7 @@
                                 <p class="visualizaciones">2023 visualizaciones</p>
                         </div>
                     </div>
-                </div> 
+                </div>
         </div>
         <!--Este será el div inferior-->
         <div>
@@ -68,7 +68,7 @@
                                 <p class="usuario"><a href="#">Cuqui</a></p>
                                 <p class="visualizaciones">20.000 visualizaciones</p>
                             </div>
-                     </div>                   
-                </div> 
+                     </div>
+                </div>
         </div>
     </section>

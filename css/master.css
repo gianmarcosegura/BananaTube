@@ -2,3 +2,9 @@
 @import url('navbar.css');
 @import url('main.css');
 @import url('footer.css');
+/*Reglas globales*/
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}

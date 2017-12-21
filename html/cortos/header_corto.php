@@ -1,5 +1,5 @@
 
-    <header>
+    <header class="container">
         <div class="logoescrito">
             BananaTUBE
         </div>
