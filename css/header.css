@@ -15,6 +15,7 @@ header div {
     float: left;
     display: inline-block;
     margin-top: 8px;
+    vertical-align: bottom;
 }
 .logoescrito {
     width: 20%;
