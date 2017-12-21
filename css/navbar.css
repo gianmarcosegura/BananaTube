@@ -1,0 +1,56 @@
+.container{
+    margin: 0;
+}
+#navbar{
+    background-color: #a7e2e3;
+    font-family: 'Quicksand', sans-serif;
+    width: auto;
+    height: 100%;
+    text-align: left;
+    padding: 5%;
+    position: absolute;
+}
+
+
+ul{
+    float: left;
+    padding: 0;
+    margin: 30% 0%;
+    
+
+}
+#navbar li{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+ul a:hover{
+    color: #f8f4a6;
+}
+
+#inicio p{
+    float: left;
+    display: inline-block;
+    margin: 3% 3%;
+    font-weight: 700;
+    
+}
+
+#ajustes p{
+    float: left;
+    display: inline-block;
+    margin: 2% 3%;
+    font-weight: 700;
+}
+
+.icon{
+    float: left;
+    
+}
+
+a{
+    text-decoration: none;
+    color:#19535f;
+}
