@@ -1,0 +1,19 @@
+footer{
+    text-align: center;
+    box-sizing: border-box;
+    background: #454851;
+    height: 50px;
+    position: static;
+}
+div{
+    padding-top: 15px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Quicksand', sans-serif;
+}
+a:hover{
+    color: yellow;
+}
+
