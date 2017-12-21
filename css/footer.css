@@ -5,15 +5,15 @@ footer{
     height: 50px;
     position: static;
 }
-div{
+.contacto{
     padding-top: 15px;
 }
-a{
+footer a{
     text-decoration: none;
     color:white;
     font-family: 'Quicksand', sans-serif;
 }
-a:hover{
-    color: yellow;
+footer a:hover{
+    color: #f8f4a6;
 }
 
