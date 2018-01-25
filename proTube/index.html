@@ -1,0 +1,187 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+
+    <title>Bananatube</title>
+</head>
+
+<body>
+    <header>
+        <!--Cabecera-->
+        <div class="container">
+            <div class="row">
+                <div class="header_logo col-10 col-md-3">
+                    <img src="logo.png" alt="logo_banatube">
+                </div>
+                <div class="boton-centro d-md-none header_logo col-2 col-md-3">
+                    <span id="burger" onclick="openNav()">&#9776;</span>
+                </div>
+                <div class="header_search1 col-md-6">
+                    <div class="row">
+                        <div class="header_search col-md-10">
+                            <form action="">
+                                <div class="input-group">
+                                    <img class="imageni" src="logogo.png" alt="">
+                                    <label for="search"></label>
+                                    <input type="text" class="header_input form-control" id="search" placeholder="Buscar">
+                                    <div class="input-group-prepend">
+                                        <button type="submit" class="header_boton input-group-text">Buscar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>  
+                    </div>
+                </div>
+                <div class="d-none d-md-block header_login col-md-3">
+                    <a  href="">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Cuerpo-->
+    <section id="cuerpo">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Login</a>
+                <a href="#">Temática</a>
+                <a href="#">Franjas de Edad</a>
+                <a href="#">Ultimos videos</a>
+                <a href="#">Mas Populares</a>
+                <a href="#">Ajustes</a>
+                
+            </div>
+        </div>
+        
+        <div class="d-none d-md-block container">
+            <div class="row">
+                <div class="col-md-3">
+
+                <h6 class="subheader1">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Inicio
+                </h6>
+                    <div id="accordion">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Temática
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse">
+                                <div class="card-body">
+                                    <ul class="body_ul">
+                                        <li>
+                                            <a  href="">Educativos</a>
+                                        </li>
+                                        <li>
+                                            <a  href="">Series</a>
+                                        </li>
+                                        <li>
+                                            <a  href="">Peliculas</a>
+                                        </li>
+                                        <li>
+                                            <a  href="">Idiomas</a>
+                                        </li>
+                                        <li>
+                                            <a  href="">Canciones</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    Franjas de Edad
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse">
+                                <div class="card-body">
+                                    <ul class="body_ul">
+                                        <li>
+                                            <a  href="">0-3 Años</a>
+                                        </li>
+                                        <li>
+                                            <a href="">3-6 Años</a>
+                                        </li>
+                                        <li>
+                                            <a href="">6-12 Años</a>
+                                        </li>
+                                        <li>
+                                            <a href="">12-15 Años</a>
+                                        </li>
+                                        <li>
+                                            <a href="">15-18 Años</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    Ultimos Videos
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    Más Populares
+                                </a>
+                            </div>
+                        </div>
+                        <h6 class="subheader2">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            Ajustes
+                        </h6>
+
+                    </div>
+                
+            </div>
+            <div class="fondoweb col-md-9">
+            </div>
+        </div>
+    </section>
+    <!--Footer Bottom-->
+    <footer class="footer-bottom">
+        <footer class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">&copy; Copyright 2018 - Bananers. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+    </script>
+    <script src="https://use.fontawesome.com/271af51ffa.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
