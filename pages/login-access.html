@@ -2,33 +2,82 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://use.fontawesome.com/309f62dc86.js"></script>
     <title>Iniciar Sesión</title>
   </head>
   <body>
     <!--login-->
-    <div class="container">
-      <form id="login" action="#" method="post" style="text-align:center" role="form"> <!-- añadido el role form --> <!--TODO: action -->
-        <h2>Iniciar Sesión</h2>
-
-        <!--email-->
-        <div>
-          <label for="email" style="display:none;">Email</label>
-          <img width="20px" src="../icons/email.png" alt="error">
-          <input id="email" type="email" name="email" placeholder="Email" required value="">
+    <br>
+    <br>
+    <br>
+    <div class="container2">
+      <div class="row">
+      <form class="needs-validation" novalidate id="login" action="#" method="post" role="form"> <!-- añadido el role form --> <!--TODO: action -->
+        <div class="">
+        <h2>Entrar en mi espacio</h2>
         </div>
-
-
-        <!--contraseña-->
-        <div>
-          <img width="20px" src="../icons/pass.png" alt="error">
-          <input type="password" name="password" placeholder="Password" pattern="[a-z0-9]{3,12}" requires value="">
-        </div>
-
-        <!--botones-->
-        <button type="submit" name="button" value="Entrar" role="button">Entrar</button> <!-- añadido el role button -->
         <br>
-        <button type="button" name="button" role="button"><a href="register.html">No estoy registrado</a></button> <!-- añadido el role button -->
+        <!--email-->
+        <div class="input-group">
+          <label for="email"></label>
+          <span class="input-group-text input-group-prepend">Usuario <br><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          <input class="form-control" id="email" type="email" name="email" placeholder="Email" required value="">
+          <div class="valid-feedback">
+              <i class="fa fa-check" aria-hidden="true"></i>
+              ¡Perfecto!
+          </div>
+          <div class="invalid-feedback">
+              <i class="fa fa-times" aria-hidden="true"></i>
+              Comprueba tu email.
+          </div>
+        </div>
+        <br>
+        <!--contraseña-->
+        <div class="input-group"> 
+          <span class="input-group-text input-group-prepend">Contraseña <br><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+          <input class="form-control" type="password" name="password" placeholder="Contraseña" required value="">
+          <div class="valid-feedback">
+              <i class="fa fa-check" aria-hidden="true"></i>
+              ¡Perfecto!
+          </div>
+          <div class="invalid-feedback">
+              <i class="fa fa-times" aria-hidden="true"></i> 
+              Comprueba tu contraseña.
+          </div>
+        </div>
+        <br>
+        <!--botones-->
+          <div class="input-group centrar">
+             <button type="submit" class="btn btn-info" name="button" value="Entrar" role="button">Entrar</button>
+          </div>
+        <br>
+          <div class="input-group centrar">        
+             <button type="button" class="btn" name="button" role="button"><a href="register.html">No estoy registrado</a></button>
+          </div>
       </form>
     </div>
+  </div>
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
   </body>
   </html>
