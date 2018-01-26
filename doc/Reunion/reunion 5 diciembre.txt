@@ -1,0 +1,54 @@
+Hacer research sobre Interfaz, Creacion de web etc.
+
+Sitios webs:
+ - https://websitesetup.org/>  expliqua como crear un website en Wordpress , como pagar un host, como crear las primeras paginas etc.
+- http://www.creativebloq.com/web-design/steps-perfect-website-layout-812625  > para determinar la interfaz 
+ - https://webdesign.tutsplus.com/articles/new-to-web-design-start-here--webdesign-15406 > paso a paso de como crear un sitio web con encapie en la parte de diseño: la importancia del tema de color, como escoger un layout bien, sobre la dirección de visualización (donde tiene que ir la mirada), el layout en forma Z
+ - herramientas gratis para hacer mock up > 
+[mashable](http://mashable.com/2012/06/07/mockup-tools/#BKiOV25XKZqL) 
+[speakyboy](https://speckyboy.com/10-completely-free-wireframing-and-mockup-tools/)
+[gonockingbird](https://gomockingbird.com/home)
+
+
+Determinar el proyecto3
+
+Propósito: Crear un YouTube accesible y seguro para uso infantil.
+Objetivos: Diseño intuitivo para que sea fácil de usar, con vídeos filtrados por los administradores para que contengan contenido apropiado para menores.
+Audiencia final del producto (target audience): Menores de 18 años, padres, abuelos y familiares.
+Contenido y features especiales: Vídeos aptos para público infantil y juvenil, ya sean educativos o de entretenimiento.  Posibilidad de crear una lista de reproducción y de guardar los vídeos visualizados. Creación de límites de minutos de visualización, crear botón like y dislike con un plátano. Crear logo, crear comentarios. La web tiene que estar disponible en inglés y en español. El logo cambiara en funcion de la temporada (banana con nieve en Navidad, banana con palmera en verano etc...) Visualizacion de tendecias, es decir, una lista de videos que posean muchas visualizaciones (los mas destacados). Creación de enlace de compartir vídeo y que se pueda compartir en diferentes redes sociales.
+
+
+Determinar distintos tipos de "personas" que van a utilizar el producto:   
+
+*Mary* es una nativa inglesa a la que le encantan las artes y las manualidades. Decide crear un canal en el que hay conversaciones en inglés y cómo hacer manualidades según la época del año.
+
+*Juan* es un profesor de secundaria que no sabe cómo encontrar vídeos educativos y motivadores para sus alumnos. Cuando encuentra algún vídeo que le gusta, no sabe cómo compartirlo con otros docentes.
+
+*Susana*, la madre de Marta, está preocupada porque trabaja por las tardes y no sabe cómo controlar lo que Marta ve online. Le gustaría poder ver desde su dispositivo los vídeos a los que accede su hija y asegurarse de que no pasa demasiado tiempo delante de una pantalla.
+
+*Pablo* es un niño de 10 años al que le apasionan los monster trucks y además acude a un colegio bilingüe. Le gusta mucho la tecnología y visualiza vídeos a través de la tablet, pero en YouTube encuentra mucho contenido inapropiado.
+
+
+
+Dibujar la interfaz
+
+user research
+
+definir que entendemos por "éxito" (ver comentario): contar con una gran variedad de usuarios que suban vídeos aptos, contar con una gran cantidad de usuarios activos reproduciendo vídeos y crear una comunidad activa donde se puedan compartir listas de reproducción y comentar los vídeos visualizados.
+poner nuestras ideas en papel
+empezar con dibujando el primer framework global de la pagina
+añadir un grid (ver comentarios)
+escoger typo
+escoger tema de color (color theme)
+Escoger el layout principal - ej: Z layout (ver comentarios)
+Pensar como todo interactua y cambia > site map (flow chart of the navigation and structure of user experience)
+Hacer un prototype
+
+Temas que considerar
+
+color scheme
+layout
+style
+flow
+responsive
+
