@@ -16,6 +16,9 @@ header{
     background-color: #a7e3e2;
 }
 
+.container2{
+  margin: auto 3.5rem;
+}
 
 .row{
     /*border: 1px solid black;*/
@@ -83,13 +86,32 @@ header{
     margin-top: 1.5rem;
 }
 
-footer{
+.lead{
+  margin: 0;
+  font-size: 0.80rem !important;
+  color: grey !important;
+}
+
+.blockquote-footer::before {
+  content: none !important;
+}
+
+.blockquote{
+  margin-top: 0.5rem;
+}
+
+.footer{
     background-color: #454851;
 }
 
 footer p{
-    margin: 0.9rem auto;
+    margin: 0.35rem auto;
     color: white;
+    font-size: 0.825rem;
+}
+
+.blockquote video{
+  margin-top: 1rem;
 }
 
 #primeraLista{
@@ -168,11 +190,22 @@ footer p{
     font-size: 60px;
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
+    h4{
+      font-size: 1.75rem;
+    }
     #cuerpo{
         padding: 0;
+        margin-top: 1.5rem;
     }
     .overlay-content{
         margin: 0;
     }
+    .header_search1{
+      display: none;
+    }
+    .container2{
+      margin: auto 2rem;
+    }
+
 }
