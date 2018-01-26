@@ -1,10 +1,6 @@
-@import url('header.css');
-@import url('navbar.css');
-@import url('main.css');
-@import url('footer.css');
-/*Reglas globales*/
-
-.container{
-  width: 80%;
-  margin: 0 auto;
+.container2{
+    margin: auto 3.5rem;
+}
+#miBoton{
+    text-decoration: underline !important;
 }
