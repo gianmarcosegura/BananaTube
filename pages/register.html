@@ -3,48 +3,178 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Regístro</title>
-    <link rel="stylesheet" href="../css/master.css">
+    <title>Registro</title>
+    
+    <link rel=stylesheet href="../../html5/bootstrap/bootstrap-4.0/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/registro.css">
+     <script src="../../html5/bootstrap/bootstrap-4.0/js/jquery-3.3.1.slim.js"></script>
+     <script src="../../html5/bootstrap/bootstrap-4.0/js/bootstrap.bundle.js"></script>
+     <script src="https://use.fontawesome.com/f1b897a9f5.js"></script>
+   
+    <script src="../../jquery/jquery-plugin/dist/jquery.validate.js"></script>
+    <script src="../../jquery/jquery-plugin/dist/additional-methods.js"></script>
+    <script src="../../jquery/jquery-plugin/dist/localization/messages_es.js"></script>
+    <script src="validaciones-bootstrap.js"></script>
+    
   </head>
 
   <body>
     <!--login-->
-    <div class="container">
-      <form id="login" action="#" method="post" style="text-align:center"> <!--TODO: action -->
-        <h2>Regístrate</h2>
-
+    <div class="container2">
+     <div class="row  alinear-centro">
+      <form id="login" class="needs-validation" novalidate action="#" method="post"> <!--TODO: action -->
+       
+      
+        <h2 class="alinear-centro">Regístrate</h2>
+      <br>
         <!--nombre y apellido-->
-        <div>
-          <label for="nameandlast"><img width="20" src="../icons/user.png" alt="imagen_usuario"/></label>      <!--TODO: label para que lo lea-->
-          <input id="nameandlast" type="text" name="name" placeholder="Nombre y Apellido" pattern="[A-Za-z]{3,12}" onblur="placeholder='Nombre y Apellido'" required value=""/>
+        <div class="input-group">     
+          <!--TODO: label para que lo lea-->
+          <label for="nameandlast"></label>
+          <span class="input-group-prepend input-group-text col-lg-6 col-md-6 col-sm-6">Nombre y apellidos <br><i class="fa fa-user" aria-hidden="true"></i>
+          </span>
+          <input id="nameandlast" type="text" class="form-control col-lg-6 col-md-6 col-sm-6" name="name" placeholder="" pattern="[A-Za-z]{3,12}" onblur="placeholder=''" required value=""/>
+              <div class="valid-feedback">
+               <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
+              </div>
+              <div class="invalid-feedback">
+                <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe un nombre válido.
+              </div>
         </div>
+        <br>
+        
         <!--email-->
-        <div>
-          <label for="email"><img width="20" src="../icons/email.png" alt="imagen_email"/></label>
-          <input id="email" type="email" name="email" placeholder="Email" onblur="placeholder='Email'" required value=""/>
+        <div class="input-group">
+          <label for="email"></label>
+          <span class="input-group-prepend input-group-text col-lg-6 col-md-6 col-sm-6 col-xs-6">Email <br><i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+          <input id="email" type="email" class="form-control col-lg-6 col-md-6 col-sm-6 col-xs-6" name="email" placeholder="" required value=""/>
+              <div class="valid-feedback">
+               <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
+              </div>
+              <div class="invalid-feedback">
+               <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe un email válido.
+              </div>
+          
         </div>
+        <br>
+        
         <!--contraseña-->
-        <div>
-          <label for="pass"><img width="20" src="../icons/pass.png" alt="imagen_pass"/></label>
-          <input id="pass" type="password" name="password" placeholder="Contraseña" pattern="[a-z0-9]{3,12}" onblur="placeholder='Contraseña'" required value=""/>
+        <div class="input-group">
+         <label for="pass"></label>
+          <span class="input-group-prepend input-group-text col-lg-6 col-md-6 col-sm-6 col-xs-6">Contraseña <br><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+          </span>
+          <input id="pass" type="password" name="password" class="form-control col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
+              <div class="valid-feedback">
+               <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
+              </div>
+              <div class="invalid-feedback">
+               <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe una contraseña con mínimo de 6 caracteres.
+              </div>
         </div>
+        <br>
         <!--repetir contraseña-->
-        <div>
-          <label for="pass2"><img width="20" src="../icons/pass.png" alt="imagen_pass2s"/></label>
-          <input id="pass2" type="password" name="pass2" placeholder="Repite Contraseña" pattern="[a-z0-9]{3,12}" onblur="placeholder='Repite Contraseña'" required value=""/>
+       
+        <div class="input-group">
+          <label for="pass2"></label>
+          <span class="input-group-prepend input-group-text col-lg-6 col-md-6 col-sm-6 col-xs-6">Repite contraseña <br><i class="fa fa-unlock-alt " aria-hidden="true"></i>
+          </span>
+          <input id="pass2" type="password" name="pass2" class="form-control col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
+              <div class="valid-feedback">
+               <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
+              </div>
+              <div class="invalid-feedback">
+               <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe la misma contraseña.
+              </div>
         </div>
+        <br>
         <!--fecha de nacimiento-->
-        <div>
-          <label for="date"><img width="20" src="../icons/clock.png" alt="imagen_calendario"/>Fecha de Nacimiento</label>
+        
+        <div class="input-group">
           <br/>
-          <input id="date" type="date" name="fecha" required value=""/>
+          <label for="date"></label>
+          <span class="input-group-prepend input-group-text col-lg-6 col-md-6 col-sm-6 col-xs-6">Fecha de nacimiento <br><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+          <input id="date" type="date" class="form-control col-lg-6 col-md-6 col-sm-6 col-xs-6" name="fecha" required value=""/>
+              <div class="valid-feedback">
+               <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
+              </div>
+              <div class="invalid-feedback">
+               <i class="fa fa-times" aria-hidden="true"></i>Por favor, elige la fecha en la que naciste.
+              </div>
         </div>
-
-
+       <br>
+        <!--Elección de avatar-->
+         <div class="input-group alinear-centro">
+           <fieldset>
+            <legend>¿Quién eres? ¡Elige tu avatar!</legend>
+                <div>
+                    <label for="avatar1"></label>
+                    <input id="avatar1" type="radio" name="avatar1"/>
+                    <span><img src=../doc/icons/avatar1.png></span>
+                </div>
+                
+                 <label for="avatar2"></label>
+                 <input id="avatar2" type="radio" name="avatar2"/>
+                 
+                  <label for="avatar3"></label>
+                  <input id="avatar3" type="radio" name="avatar3"/>
+                 
+                  <label for="avatar4"></label>
+                  <input id="avatar4" type="radio" name="avatar4"/>
+                
+           </fieldset>
+        </div>
+        
+       <br>    
         <!--Boton Registrarse-->
-        <input type="submit" name="registro" value="Registrarse"/>
+        <div class="input-group alinear-centro">
+            <label for="submit"></label>
+            <input type="submit" id="submit" class="btn btn-info" name="registro" value="Registrarme"/>
+        </div>
+       
+    
+        
       </form>
     </div>
+   </div>
+   
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+        
+        
+        
+        
+        var password, password2;
+
+        password = document.getElementById('pass');
+        password2 = document.getElementById('pass2');
+
+        password.onchange = password2.onkeyup = passwordMatch;
+
+        function passwordMatch() {
+            if(password.value !== password2.value)
+                password2.setCustomValidity('Las contraseñas no coinciden.');
+            else
+                password2.setCustomValidity('');
+        }
+    </script>
   </body>
 
 </html>
