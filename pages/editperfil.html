@@ -4,57 +4,55 @@
 <head>
   <meta charset="utf-8">
   <title>Editar perfil</title>
+  <link rel=stylesheet href="../../bootstrap/bootstrap-4.0/css/bootstrap.css" />
+  <script src="../../bootstrap/bootstrap-4.0/js/jquery-3.3.1.slim.js"></script>
+  <script src="../../bootstrap-4.0/js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
   <!--Editar tu Perfil-->
   <div class="container">
-    <form id="login" action="#" method="post" style="text-align:center"> <!--TODO: action -->
-    <div>
-      <input type="image" src="../icons/boy.png" width="150px" name="image" alt="error" style="padding:30px" >
-    </div>
-    <br>
-    <div>
-      <label for="name">Nombre</label>
-      <input id="name" type="text" name="firstname" pattern="[A-Za-z]{3,30}">
-    </div>
-    <br>
-    <div>
-      <label for="lastname">Apellido/s</label>
-      <input id="lastname" type="text" name="lastname" pattern="[A-Za-z]{2,35}">
-    </div>
-    <br>
-    <div>
-      <label for="email">Email</label>
-      <input id="email" type="email" name="email">
-    </div>
-    <br>
-    <div>
-      <label for="pass">Contraseña</label>
-      <input id="pass" type="password" name="contraseña" pattern="(?=.*\d)(?=.*[a-z]).{6,15}">
-    </div>
-    <br>
-    <div>
-      <label for="date">Fecha de Nacimiento</label>
-      <input id="date" type="date" name="fecha">
-    </div>
-    <br>
-    <div>
-      <label for="namechannel">Nombre del Espacio</label>
-      <input id="namechannel" type="password" name="contraseña">
-    </div>
-    <br>
-    <div>
-      <label for="idioma">Idioma</label>
-      <select>
-        <option id="idioma" name="ingles">Inglés</option>
-        <option id="idioma" name="español" selected>Español</option>
-      </select>
-    </div>
-    <br>
-    <div>
-        <input type="submit" id="submit" name="submit" value="Guardar"/>
-    </div>
+    <br />
+    <form id="login" action="#" method="post" role="form" class="form-group" style="text-align: center"> <!--TODO: action -->
+        <div class="offset-md-3 col-md-6">
+            <label for="foto"></label>
+            <input type="image" id="foto" src="../doc/icons/boy.png" name="image" alt="error" width="25%">
+        </div>
+        <div class="offset-md-3 col-md-6">
+            <label for="name"></label>
+            <input id="name" type="text" name="firstname" pattern="[A-Za-z]{3,30}" required class="form-control" placeholder="Nombre">
+        </div>
+        <div class="offset-md-3 col-md-6">
+            <label for="lastname"></label>
+            <input id="lastname" type="text" name="lastname" pattern="[A-Za-z]{2,35}"required class="form-control" placeholder="Apellido/s">
+        </div>
+        <div class="offset-md-3 col-md-6">
+            <label for="email"></label>
+            <input id="email" type="email" name="email" required class="form-control" placeholder="Email">
+        </div>
+        <div class="offset-md-3 col-md-6">
+            <label for="pass"></label>
+            <input id="pass" type="password" name="contraseña" pattern="(?=.*\d)(?=.*[a-z]).{6,15}" required class="form-control" placeholder="Contraseña">
+        </div>
+        <div class="offset-md-3 col-md-6">
+            <label for="date">Fecha de Nacimiento</label>
+            <input id="date" type="date" name="fecha" required class="form-control" placeholder="Fecha de nacimiento">
+        </div>
+        <div class="offset-md-3 col-md-6">
+            <label for="namechannel"></label>
+            <input id="namechannel" type="text" name="canal" required class="form-control" placeholder="Nombre del espacio">
+        </div>
+        <div class="offset-md-3 col-md-6">
+            <label for="idioma">Idioma</label>
+            <select class="form-control">
+                <option id="idioma" name="ingles">Inglés</option>
+                <option id="idioma" name="español" selected>Español</option>
+            </select>
+        </div>
+        <br>
+        <div class="offset-md-3 col-md-6">
+            <input type="submit" id="submit" name="submit" value="Guardar" class="btn btn-info col-md-6"/>
+        </div>
     </form>
   </div>
 </body>
