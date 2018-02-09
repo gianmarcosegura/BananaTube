@@ -5,35 +5,39 @@
     <meta charset="utf-8">
     <title>Registro</title>
     
-    <link rel=stylesheet href="../../html5/bootstrap/bootstrap-4.0/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../../html5/bootstrap/bootstrap-4.0/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/registro.css"/>
      <script src="../../html5/bootstrap/bootstrap-4.0/js/jquery-3.3.1.slim.js"></script>
      <script src="../../html5/bootstrap/bootstrap-4.0/js/bootstrap.bundle.js"></script>
      <script src="https://use.fontawesome.com/f1b897a9f5.js"></script>
-   
-    <script src="../../jquery/jquery-plugin/dist/jquery.validate.js"></script>
-    <script src="../../jquery/jquery-plugin/dist/additional-methods.js"></script>
-    <script src="../../jquery/jquery-plugin/dist/localization/messages_es.js"></script>
-    <script src="validaciones-bootstrap.js"></script>
+   <script
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script src="../../html5/jquery/jquery-plugin/dist/jquery.validate.js"></script>
+    <script src="../../html5/jquery/jquery-plugin/dist/additional-methods.js"></script>
+    <script src="../../html5/jquery/jquery-plugin/dist/localization/messages_es.js"></script>
+    
+    <script src="register.js"></script>
     
   </head>
 
   <body>
     <!--login-->
     <div class="container2">
-     <div class="row  alinear-centro">
-      <form id="login" class="needs-validation" novalidate action="#" method="post"> <!--TODO: action -->
-       
+     <form id="login" class="needs-validation" novalidate action="#" method="post"> <!--TODO: action -->
+     <div class="row alinear-centro offset-lg-2 col-lg-8 offset-lg-2">
+     
       
         <h2 class="alinear-centro">Regístrate</h2>
-      <br>
+        <br>
         <!--nombre y apellido-->
         <div class="input-group">     
           <!--TODO: label para que lo lea-->
           <label for="nameandlast"></label>
-          <span class="input-group-prepend input-group-text col-lg-6 col-md-6 col-sm-6">Nombre y apellidos <br><i class="fa fa-user" aria-hidden="true"></i>
+          <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6">Nombre y apellidos <br><i class="fa fa-user" aria-hidden="true"></i>
           </span>
-          <input id="nameandlast" type="text" class="form-control col-lg-6 col-md-6 col-sm-6" name="name" placeholder="" pattern="[A-Za-z]{3,12}" onblur="placeholder=''" required value=""/>
+          <input id="nameandlast" type="text" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6" name="name" placeholder="" pattern="[A-Za-z]{3,12}" onblur="placeholder=''" required value=""/>
               <div class="valid-feedback">
                <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
               </div>
@@ -41,14 +45,13 @@
                 <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe un nombre válido.
               </div>
         </div>
-        <br>
         
         <!--email-->
         <div class="input-group">
           <label for="email"></label>
-          <span class="input-group-prepend input-group-text col-lg-6 col-md-6 col-sm-6 col-xs-6">Email <br><i class="fa fa-envelope" aria-hidden="true"></i>
+          <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Email <br><i class="fa fa-envelope" aria-hidden="true"></i>
           </span>
-          <input id="email" type="email" class="form-control col-lg-6 col-md-6 col-sm-6 col-xs-6" name="email" placeholder="" required value=""/>
+          <input id="email" type="email" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" name="email" placeholder="" required value=""/>
               <div class="valid-feedback">
                <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
               </div>
@@ -62,9 +65,9 @@
         <!--contraseña-->
         <div class="input-group">
          <label for="pass"></label>
-          <span class="input-group-prepend input-group-text col-lg-6 col-md-6 col-sm-6 col-xs-6">Contraseña <br><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+          <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Contraseña <br><i class="fa fa-unlock-alt" aria-hidden="true"></i>
           </span>
-          <input id="pass" type="password" name="password" class="form-control col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
+          <input id="pass" type="password" name="password" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
               <div class="valid-feedback">
                <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
               </div>
@@ -77,9 +80,9 @@
        
         <div class="input-group">
           <label for="pass2"></label>
-          <span class="input-group-prepend input-group-text col-lg-6 col-md-6 col-sm-6 col-xs-6">Repite contraseña <br><i class="fa fa-unlock-alt " aria-hidden="true"></i>
+          <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Repite contraseña <br><i class="fa fa-unlock-alt " aria-hidden="true"></i>
           </span>
-          <input id="pass2" type="password" name="pass2" class="form-control col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
+          <input id="pass2" type="password" name="pass2" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
               <div class="valid-feedback">
                <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
               </div>
@@ -93,8 +96,8 @@
         <div class="input-group">
           <br/>
           <label for="date"></label>
-          <span class="input-group-prepend input-group-text col-lg-6 col-md-6 col-sm-6 col-xs-6">Fecha de nacimiento <br><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
-          <input id="date" type="date" class="form-control col-lg-6 col-md-6 col-sm-6 col-xs-6" name="fecha" required value=""/>
+          <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Fecha de nacimiento <br><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+          <input id="date" type="date" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" name="fecha" required value=""/>
               <div class="valid-feedback">
                <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
               </div>
@@ -102,44 +105,38 @@
                <i class="fa fa-times" aria-hidden="true"></i>Por favor, elige la fecha en la que naciste.
               </div>
         </div>
-       <br>
+      </div>
         <!--Elección de avatar-->
-         <div class="input-group alinear-centro">
-           <fieldset>
-            <legend>¿Quién eres? ¡Elige tu avatar!</legend>
-                <div>
-                    <label for="avatar1"></label>
-                    <input id="avatar1" type="radio" name="avatar1"/>
-                    <span><img src=../doc/icons/avatar1.png></span>
-                </div>
-                
-                 <label for="avatar2"></label>
-                 <input id="avatar2" type="radio" name="avatar2"/>
-                 
-                  <label for="avatar3"></label>
-                  <input id="avatar3" type="radio" name="avatar3"/>
-                 
-                  <label for="avatar4"></label>
-                  <input id="avatar4" type="radio" name="avatar4"/>
-                
-           </fieldset>
+        <input type="hidden" name="avatar" id="avatarSeleccionado" value=""/>
+        <!-- OPCION A-->
+        <div class="row alinear-centro">
+            <h3>¿Quién eres? ¡Elige tu avatar!</h3>
+        </div>  
+        <div id="avatares" class="row alinear-centro">
+        <br><!--FALTA AJUSTAR TAMAÑO DESDE SM  A XS-->
+          <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar1" src=../doc/icons/avatar1.png></span>
+          <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img  id="avatar2" src=../doc/icons/avatar2.png></span>
+          <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar3" src=../doc/icons/avatar3.png></span>
+          <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar4" src=../doc/icons/avatar4.png></span>
+          <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar5" src=../doc/icons/avatar5.png></span>
+          <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar6" src=../doc/icons/avatar6.png></span>  
         </div>
-        
-       <br>    
+     
         <!--Boton Registrarse-->
-        <div class="input-group alinear-centro">
+        <div class="row input-group alinear-centro">
             <label for="submit"></label>
             <input type="submit" id="submit" class="btn btn-info" name="registro" value="Registrarme"/>
         </div>
        
     
-        
       </form>
-    </div>
-   </div>
+    
+    
    
+   </div>
+    
     <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    // Disabling form submissions if there are invalid fields
     (function() {
       'use strict';
       window.addEventListener('load', function() {
@@ -155,10 +152,8 @@
             form.classList.add('was-validated');
           }, false);
         });
-      }, false);
-    })();
-        
-        
+        }, false);
+        })();
         
         
         var password, password2;
@@ -175,6 +170,6 @@
                 password2.setCustomValidity('');
         }
     </script>
-  </body>
+</body>
 
 </html>

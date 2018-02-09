@@ -12,6 +12,8 @@
     margin-top: 3rem;
 }
 
-/*.avatar1{
-    background-image: url(../doc/icons/avatar1.png)
-}*/
+
+.bordeRojo{
+    border: red solid 1px;
+}
+
