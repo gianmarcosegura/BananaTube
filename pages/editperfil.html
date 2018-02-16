@@ -16,7 +16,7 @@
     <form id="login" action="#" method="post" role="form" class="form-group" style="text-align: center"> <!--TODO: action -->
         <div class="offset-md-3 col-md-6">
             <label for="foto"></label>
-            <input type="image" id="foto" src="../doc/icons/boy.png" name="image" alt="error" width="25%">
+            <input type="image" id="foto" src="../doc/icons/avatar5.png" name="image" alt="error" width="25%">
         </div>
         <div class="offset-md-3 col-md-6">
             <label for="name"></label>
@@ -24,11 +24,11 @@
         </div>
         <div class="offset-md-3 col-md-6">
             <label for="lastname"></label>
-            <input id="lastname" type="text" name="lastname" pattern="[A-Za-z]{2,35}"required class="form-control" placeholder="Apellido/s">
+            <input id="lastname" type="text" name="lastname" required class="form-control" placeholder="Apellido/s">
         </div>
         <div class="offset-md-3 col-md-6">
             <label for="email"></label>
-            <input id="email" type="email" name="email" required class="form-control" placeholder="Email">
+            <input id="email" type="email" name="email" disabled required class="form-control" placeholder="Email">
         </div>
         <div class="offset-md-3 col-md-6">
             <label for="pass"></label>
@@ -48,6 +48,11 @@
                 <option id="idioma" name="ingles">Inglés</option>
                 <option id="idioma" name="español" selected>Español</option>
             </select>
+        </div>
+        <br>
+        <div class="offset-md-3 col-md-6">
+            <label for="control">Sí, quiero controlar el uso de esta cuenta de BANANAtube</label>
+            <input id="control" type="checkbox" name="control">
         </div>
         <br>
         <div class="offset-md-3 col-md-6">
