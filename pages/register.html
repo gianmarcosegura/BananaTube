@@ -18,7 +18,7 @@
     <script src="../../html5/jquery/jquery-plugin/dist/additional-methods.js"></script>
     <script src="../../html5/jquery/jquery-plugin/dist/localization/messages_es.js"></script>
     
-    <script src="register.js"></script>
+    <script src="../js/register.js"></script>
     
   </head>
 
@@ -26,18 +26,16 @@
     <!--login-->
     <div class="container2">
      <form id="login" class="needs-validation" novalidate action="#" method="post"> <!--TODO: action -->
-     <div class="row alinear-centro offset-lg-2 col-lg-8 offset-lg-2">
+     <div class="row alinear-centro offset-xl-3 col-xl-6 offset-xl-3 offset-lg-2 col-lg-8 offset-lg-2">
      
-      
         <h2 class="alinear-centro">Regístrate</h2>
-        <br>
         <!--nombre y apellido-->
         <div class="input-group">     
           <!--TODO: label para que lo lea-->
           <label for="nameandlast"></label>
-          <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6">Nombre y apellidos <br><i class="fa fa-user" aria-hidden="true"></i>
+          <span class="input-group-prepend input-group-text col-xl-4 col-lg-6 col-md-6 col-sm-6">Nombre y apellidos <br><i class="fa fa-user" aria-hidden="true"></i>
           </span>
-          <input id="nameandlast" type="text" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6" name="name" placeholder="" pattern="[A-Za-z]{3,12}" onblur="placeholder=''" required value=""/>
+          <input id="nameandlast" type="text" class="form-control col-xl-8 col-lg-6 col-md-6 col-sm-6" name="name" placeholder="" pattern="[A-Za-z]{3,12}" onblur="placeholder=''" required value=""/>
               <div class="valid-feedback">
                <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
               </div>
@@ -49,9 +47,9 @@
         <!--email-->
         <div class="input-group">
           <label for="email"></label>
-          <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Email <br><i class="fa fa-envelope" aria-hidden="true"></i>
+          <span class="input-group-prepend input-group-text col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6">Email <br><i class="fa fa-envelope" aria-hidden="true"></i>
           </span>
-          <input id="email" type="email" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" name="email" placeholder="" required value=""/>
+          <input id="email" type="email" class="form-control col-xl-8 col-lg-6 col-md-6 col-sm-6 col-xs-6" name="email" placeholder="" required value=""/>
               <div class="valid-feedback">
                <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
               </div>
@@ -60,14 +58,14 @@
               </div>
           
         </div>
-        <br>
+      
         
         <!--contraseña-->
         <div class="input-group">
          <label for="pass"></label>
-          <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Contraseña <br><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+          <span class="input-group-prepend input-group-text col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6">Contraseña <br><i class="fa fa-unlock-alt" aria-hidden="true"></i>
           </span>
-          <input id="pass" type="password" name="password" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
+          <input id="pass" type="password" name="password" class="form-control col-xl-8 col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
               <div class="valid-feedback">
                <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
               </div>
@@ -75,14 +73,14 @@
                <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe una contraseña con mínimo de 6 caracteres.
               </div>
         </div>
-        <br>
+        
         <!--repetir contraseña-->
-       
+        
         <div class="input-group">
           <label for="pass2"></label>
-          <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Repite contraseña <br><i class="fa fa-unlock-alt " aria-hidden="true"></i>
+          <span class="input-group-prepend input-group-text col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6">Repite contraseña <br><i class="fa fa-unlock-alt " aria-hidden="true"></i>
           </span>
-          <input id="pass2" type="password" name="pass2" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
+          <input id="pass2" type="password" name="pass2" class="form-control col-xl-8 col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
               <div class="valid-feedback">
                <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
               </div>
@@ -90,14 +88,13 @@
                <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe la misma contraseña.
               </div>
         </div>
-        <br>
+       
         <!--fecha de nacimiento-->
         
         <div class="input-group">
-          <br/>
           <label for="date"></label>
-          <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Fecha de nacimiento <br><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
-          <input id="date" type="date" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" name="fecha" required value=""/>
+          <span class="input-group-prepend input-group-text col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6">Fecha de nacimiento <br><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+          <input id="date" type="date" class="form-control col-xl-8 col-lg-6 col-md-6 col-sm-6 col-xs-6" name="fecha" required value=""/>
               <div class="valid-feedback">
                <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto! 
               </div>
@@ -105,15 +102,20 @@
                <i class="fa fa-times" aria-hidden="true"></i>Por favor, elige la fecha en la que naciste.
               </div>
         </div>
+        <div>
+            <label for="control">Sí, quiero controlar el uso de esta cuenta de BANANAtube</label>
+            <input id="control" type="checkbox" name="control"><abbr title="Marca esta casilla si esta cuenta va a ser usada por un menor de 14 años"><small>¿Qué es esto?</small></abbr>
+        </div>
       </div>
         <!--Elección de avatar-->
+        
         <input type="hidden" name="avatar" id="avatarSeleccionado" value=""/>
         <!-- OPCION A-->
         <div class="row alinear-centro">
-            <h3>¿Quién eres? ¡Elige tu avatar!</h3>
+            <h4>¿Quién eres? ¡Elige tu avatar!</h4>
         </div>  
         <div id="avatares" class="row alinear-centro">
-        <br><!--FALTA AJUSTAR TAMAÑO DESDE SM  A XS-->
+        <!--FALTA AJUSTAR TAMAÑO DESDE SM  A XS-->
           <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar1" src=../doc/icons/avatar1.png></span>
           <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img  id="avatar2" src=../doc/icons/avatar2.png></span>
           <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar3" src=../doc/icons/avatar3.png></span>
@@ -122,17 +124,16 @@
           <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar6" src=../doc/icons/avatar6.png></span>  
         </div>
      
+     
+        
         <!--Boton Registrarse-->
-        <div class="row input-group alinear-centro">
+        <div class="input-group alinear-centro">
             <label for="submit"></label>
             <input type="submit" id="submit" class="btn btn-info" name="registro" value="Registrarme"/>
-        </div>
-       
+        </div> 
     
       </form>
     
-    
-   
    </div>
     
     <script>

@@ -13,7 +13,31 @@
 }
 
 
-.bordeRojo{
-    border: red solid 1px;
+.borde{
+    border: black solid 4px;
+    border-style: dashed;
+    border-radius: 10%;
 }
 
+#avatares{
+    margin:2rem auto;
+   
+    
+}
+
+#avatares img{
+    width: 100%;
+}
+
+@media (max-width: 998px) {
+  #avatares img{
+    width: 70%;
+    }
+  }
+@media (max-width: 600px) {
+  #avatares img{
+    width: 60%;
+    }
+  }
+
+/* Falta ajustar los media query a versión teléfono. La idea es que haya dos avatares por fila. */
