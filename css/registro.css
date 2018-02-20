@@ -53,4 +53,4 @@ body{
   .bordeRojo{
       border: red solid 1px;
   }
-/* Falta ajustar los media query a versión teléfono. La idea es que haya dos avatares por fila. */
+/* Ajustados los media query a versión teléfono. La idea es que haya dos avatares por fila. */
