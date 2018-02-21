@@ -4,19 +4,54 @@
 <head>
   <meta charset="utf-8">
   <title>Editar perfil</title>
-  <link rel=stylesheet href="../../bootstrap/bootstrap-4.0/css/bootstrap.css" />
+  <link rel=stylesheet href="bootstrap-4.0.0-dist/css/bootstrap.css" />
+  <link rel=stylesheet href="../css/editperfil.css"/>
   <script src="../../bootstrap/bootstrap-4.0/js/jquery-3.3.1.slim.js"></script>
-  <script src="../../bootstrap-4.0/js/bootstrap.bundle.js"></script>
+  <script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+  <script src="../js/editperfil.js"></script>
 </head>
 
 <body>
   <!--Editar tu Perfil-->
   <div class="container">
-    <br />
+    <br>
     <form id="login" action="#" method="post" role="form" class="form-group" style="text-align: center"> <!--TODO: action -->
         <div class="offset-md-3 col-md-6">
-            <label for="foto"></label>
-            <input type="image" id="foto" src="../doc/icons/avatar5.png" name="image" alt="error" width="25%">
+           <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>-->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header text-center">
+          <h4 class="modal-title ">Elige tu AVATAR</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <label><input type="radio" name="avatar" value="avatar1"><img src="../doc/icons/avatar1.png"></label>
+          <input type="radio" name="avatar" value="avatar2"><br>
+          <input type="radio" name="avatar" value="avatar3"><br>
+          <input type="radio" name="avatar" value="avatar4"><br>
+          <input type="radio" name="avatar" value="avatar5"><br>
+          <input type="radio" name="avatar" value="avatar6"><br>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+            <label for="avatarSeleccionado"></label>
+            <img id="avatarActual" src="../doc/icons/avatar5.png" name="avatarSeleccionado" alt="error" width="25%" data-toggle="modal" data-target="#myModal">
         </div>
         <div class="offset-md-3 col-md-6">
             <label for="name"></label>
@@ -28,11 +63,15 @@
         </div>
         <div class="offset-md-3 col-md-6">
             <label for="email"></label>
-            <input id="email" type="email" name="email" disabled required class="form-control" placeholder="Email">
+            <input id="email" type="email" name="email" required class="form-control" placeholder="Email">
         </div>
         <div class="offset-md-3 col-md-6">
             <label for="pass"></label>
             <input id="pass" type="password" name="contraseña" pattern="(?=.*\d)(?=.*[a-z]).{6,15}" required class="form-control" placeholder="Contraseña">
+        </div>
+        <div class="offset-md-3 col-md-6">
+            <label for="pass2"></label>
+            <input id="pass2" type="password" name="contraseña2" pattern="(?=.*\d)(?=.*[a-z]).{6,15}" required class="form-control" placeholder="Repite contraseña">
         </div>
         <div class="offset-md-3 col-md-6">
             <label for="date">Fecha de Nacimiento</label>
