@@ -13,7 +13,7 @@ label > input + img{ /* IMAGE STYLES */
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
     border:2px dashed #000;
-border-radius: 10%;}
+    border-radius: 10%;}
 
 #avatares{
     margin:2rem auto;
