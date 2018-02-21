@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="master.css">
-  <link rel="stylesheet" href="../css/central.css">
+  <link rel="stylesheet" href="../css/reproductor.css">
 </head>
 <body>
   <!--Cabecera-->
@@ -16,7 +16,7 @@
     <div class="container2">
       <div class="row">
         <div class="header_logo col-10 col-md-3">
-          <img src="logo.png" alt="logo_banatube">
+          <img src="../proTube/logo.png" alt="logo_banatube">
         </div>
         <div class="boton-centro d-md-none d-lg-none header_logo col-2 col-md-3">
           <span id="burger" onclick="openNav()">&#9776;</span>
@@ -47,76 +47,10 @@
     </div>
   </header>
   <!--Cuerpo-->
-  <section id="cuerpo">
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <a href="#">Login</a>
-        <a href="#">Mis comentarios</a>
-        <a href="#">Historial</a>
-        <a href="#">Mis listas de reproducción</a>
-        <a href="#">Ajustes</a>
-        <a href="#">Control parental</a>
-
-      </div>
-    </div>
-
-    <div class="d-md-block container2">
-      <div class="row">
-        <div class="col-md-3 col-lg-2 d-none d-lg-block">
-
-          <h6 class="subheader1">
-            <i class="fa fa-home" aria-hidden="true"></i>
-            Inicio
-          </h6>
-          <div id="accordion">
-
-            <div class="card">
-              <div class="card-header">
-                <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                  Mis comentarios
-                </a>
-              </div>
-          
-            </div>
-
-            <div class="card">
-              <div class="card-header">
-                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                  Historial
-                </a>
-              </div>
-             
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                  Mi lista de reproducción
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                  Control parental
-                </a>
-              </div>
-            </div>
-            <h6 class="subheader2">
-              <i class="fa fa-cog" aria-hidden="true"></i>
-              Ajustes
-            </h6>
-
-          </div>
-
-        </div>
-        <div class="fondoweb offset-xl-1 col-lg-10 col-xl-9">
-          <div class="main_ row">
-            <div class="col-12">
-              <h4>Más populares</h4>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="embed-responsive embed-responsive-16by9">
+  <section id="" class="container-fluid">
+    <div id="reproductor" class="row">
+        <div id="pantallag" class="col-xl-8">
+             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
               </div>
               <blockquote class="blockquote">
@@ -124,89 +58,29 @@
                 <p class="lead">ElviraRub</p>
                 <footer class="lead">32.123 visitas</footer>
               </blockquote>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-              </div>
-              <blockquote class="blockquote">
-                <p class="h6"><strong>Descripcion video</strong></p>
-                <p class="lead">Username</p>
-                <footer class="lead">3.123 visitas</footer>
-              </blockquote>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-              </div>
-              <blockquote class="blockquote">
-                <p class="h6"><strong>Descripcion video</strong></p>
-                <p class="lead">Username</p>
-                <footer class="lead">3.123 visitas</footer>
-              </blockquote>
-            </div>
-            <div class="col-md-6 col-xl-4 d-lg-block d-xl-none">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-              </div>
-              <blockquote class="blockquote">
-                <p class="h6"><strong>Descripcion video</strong></p>
-                <p class="lead">Username</p>
-                <footer class="lead">3.123 visitas</footer>
-              </blockquote>
-            </div>
-
-          </div>
-          <div class="main_ row">
-            <div class="col-12">
-              <h4>Últimos vídeos</h4>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-              </div>
-              <blockquote class="blockquote">
-                <p class="h6"><strong>Descripcion video</strong></p>
-                <p class="lead">Username</p>
-                <footer class="lead">3.123 visitas</footer>
-              </blockquote>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-              </div>
-              <blockquote class="blockquote">
-                <p class="h6"><strong>Descripcion video</strong></p>
-                <p class="lead">Username</p>
-                <footer class="lead">3.123 visitas</footer>
-              </blockquote>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-              </div>
-              <blockquote class="blockquote">
-                <p class="h6"><strong>Descripcion video</strong></p>
-                <p class="lead">Username</p>
-                <footer class="lead">3.123 visitas</footer>
-              </blockquote>
-            </div>
-            <div class="col-md-6 col-xl-4 d-lg-block d-xl-none">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-              </div>
-              <blockquote class="blockquote">
-                <p class="h6"><strong>Descripcion video</strong></p>
-                <p class="lead">Username</p>
-                <footer class="lead">3.123 visitas</footer>
-              </blockquote>
-            </div>
-
-          </div>
         </div>
-      </div>
-      </div>
-    </section>
+        <div id="sugerencias" class="col-xl-4">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+              <blockquote class="blockquote">
+                <p class="h6"><strong>Descripcion video</strong></p>
+                <p class="lead">Username</p>
+                <footer class="lead">3.123 visitas</footer>
+              </blockquote>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+              </div>
+              <blockquote class="blockquote">
+                <p class="h6"><strong>Descripcion video</strong></p>
+                <p class="lead">Username</p>
+                <footer class="lead">3.123 visitas</footer>
+              </blockquote>
+            </div>
+        </div>
+    </div>
+  </section>
   <!--Footer Bottom-->
   <footer class="footer footer-bottom">
       <div class="container">
