@@ -1,3 +1,6 @@
+body{
+    background-color: #f8f4c2;
+}
 .container2{
     margin:auto 3.5rem;
 }
@@ -34,10 +37,20 @@
     width: 70%;
     }
   }
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   #avatares img{
     width: 60%;
     }
   }
+  .alinear-centro{
+     justify-content: center;
+     text-align: center;
+  }
+  #avatar1, #avatar2, #avatar3, #avatar4, #avatar5, #avatar6 {
+    width: 100%
+  }
 
+  .bordeRojo{
+      border: red solid 1px;
+  }
 /* Falta ajustar los media query a versión teléfono. La idea es que haya dos avatares por fila. */
