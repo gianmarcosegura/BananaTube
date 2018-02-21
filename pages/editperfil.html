@@ -6,9 +6,8 @@
   <title>Editar perfil</title>
   <link rel=stylesheet href="bootstrap-4.0.0-dist/css/bootstrap.css" />
   <link rel=stylesheet href="../css/editperfil.css"/>
-  <script src="../../bootstrap/bootstrap-4.0/js/jquery-3.3.1.slim.js"></script>
-  <script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
-  <script src="../js/editperfil.js"></script>
+  <script src="../js/jquery-3.2.1.js"></script>
+  <script src="../js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
@@ -33,13 +32,13 @@
         </div>
         
         <!-- Modal body -->
-        <div class="modal-body">
-          <label><input type="radio" name="avatar" value="avatar1"><img src="../doc/icons/avatar1.png"></label>
-          <input type="radio" name="avatar" value="avatar2"><br>
-          <input type="radio" name="avatar" value="avatar3"><br>
-          <input type="radio" name="avatar" value="avatar4"><br>
-          <input type="radio" name="avatar" value="avatar5"><br>
-          <input type="radio" name="avatar" value="avatar6"><br>
+        <div class="modal-body row alinear-centro" id="avatares">
+          <label class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6"><input type="radio" name="avatar" value="avatar1"><img src="../doc/icons/avatar1.png" id="avatar1" class="eligeAvatar"></label>
+          <label class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6"><input type="radio" name="avatar" value="avatar2"><img src="../doc/icons/avatar2.png" id="avatar2" class="eligeAvatar"></label>
+          <label class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6"><input type="radio" name="avatar" value="avatar3"><img src="../doc/icons/avatar3.png" id="avatar3" class="eligeAvatar"></label>
+          <label class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6"><input type="radio" name="avatar" value="avatar4"><img src="../doc/icons/avatar4.png" id="avatar4" class="eligeAvatar"></label>
+          <label class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6"><input type="radio" name="avatar" value="avatar5"><img src="../doc/icons/avatar5.png" id="avatar5" class="eligeAvatar"></label>
+          <label class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6"><input type="radio" name="avatar" value="avatar6"><img src="../doc/icons/avatar6.png" id="avatar6" class="eligeAvatar"></label>
         </div>
         
         <!-- Modal footer -->
@@ -99,6 +98,7 @@
         </div>
     </form>
   </div>
+    <script src="../js/editperfil.js"></script>
 </body>
 
 </html>
