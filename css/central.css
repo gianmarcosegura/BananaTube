@@ -5,6 +5,9 @@ video{
 body{
     background-color: #f8f4c2;
 }
+#cuerpo{
+    padding-top: 0.5rem;
+}
 a{
     text-decoration: none;
     color:#19535f;
@@ -46,4 +49,7 @@ a{
 }
 .titulo{
     margin-bottom: 5px;
+}
+.btn-primary{
+    background-color: #19535f;
 }
