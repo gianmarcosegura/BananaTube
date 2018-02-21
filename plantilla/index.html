@@ -1,0 +1,308 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bananatube</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="../css/central.css">
+  <style media="screen">
+
+  .alinear-centro{
+     justify-content: center;
+     text-align: center;
+
+  }
+  #avatar1, #avatar2, #avatar3, #avatar4, #avatar5, #avatar6 {
+    width: 100%
+  }
+
+
+  .bordeRojo{
+      border: red solid 1px;
+  }
+  </style>
+</head>
+<body>
+  <!--Cabecera-->
+  <header>
+    <div class="container2">
+      <div class="row">
+        <div class="header_logo col-10 col-md-3">
+          <img src="logo.png" alt="logo_banatube">
+        </div>
+        <div class="boton-centro d-md-none d-lg-none header_logo col-2 col-md-3">
+          <span id="burger" onclick="openNav()">&#9776;</span>
+        </div>
+        <div class="header_search1 col-md-6">
+          <div class="row">
+            <div class="header_search col-md-11">
+              <form action="">
+                <div class="input-group">
+                  <img class="imageni" src="../img/banana_xs.png" alt="">
+                  <label for="search"></label>
+                  <input type="text" class="header_input form-control" id="search" placeholder="Buscar">
+                  <div class="input-group-prepend">
+                    <button type="submit" class="header_boton input-group-text">Buscar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="boton-centro d-none d-md-block d-lg-none header_logo text-right col-2 col-md-3">
+          <span id="burger" onclick="openNav()">&#9776;</span>
+        </div>
+        <div class="d-none d-lg-block header_login col-md-3">
+          <a href="">Entrar a mi espacio</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Cuerpo-->
+  <section id="cuerpo">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">Login</a>
+        <a href="#">Temática</a>
+        <a href="#">Franjas de Edad</a>
+        <a href="#">Ultimos videos</a>
+        <a href="#">Mas Populares</a>
+        <a href="#">Ajustes</a>
+
+      </div>
+    </div>
+    <div class="d-md-block container2">
+      <div class="row">
+        <div class="col-md-3 col-lg-2 d-none d-lg-block">
+
+          <h6 class="subheader1">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Inicio
+          </h6>
+          <div id="accordion">
+
+            <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  Temática
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse">
+                <div class="card-body">
+                  <ul class="body_ul">
+                    <li>
+                      <a href="">Educativos</a>
+                    </li>
+                    <li>
+                      <a href="">Series</a>
+                    </li>
+                    <li>
+                      <a href="">Peliculas</a>
+                    </li>
+                    <li>
+                      <a href="">Idiomas</a>
+                    </li>
+                    <li>
+                      <a href="">Canciones</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  Franjas de edad
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse">
+                <div class="card-body">
+                  <ul class="body_ul">
+                    <li>
+                      <a href="">0-3 Años</a>
+                    </li>
+                    <li>
+                      <a href="">3-6 Años</a>
+                    </li>
+                    <li>
+                      <a href="">6-12 Años</a>
+                    </li>
+                    <li>
+                      <a href="">12-15 Años</a>
+                    </li>
+                    <li>
+                      <a href="">15-18 Años</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  Más populares
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  Ultimos videos
+                </a>
+              </div>
+            </div>
+            <h6 class="subheader2">
+              <i class="fa fa-cog" aria-hidden="true"></i>
+              Ajustes
+            </h6>
+
+          </div>
+
+        </div>
+        <div class="fondoweb offset-xl-1 col-lg-10 col-xl-9">
+          <div class="">
+            <div class="container2">
+             <form id="login" class="needs-validation" novalidate action="#" method="post"> <!--TODO: action -->
+             <div class="row alinear-centro offset-lg-2 col-lg-8 offset-lg-2">
+
+
+                <h2 class="alinear-centro">Regístrate</h2>
+                <br>
+                <!--nombre y apellido-->
+                <div class="input-group">
+                  <!--TODO: label para que lo lea-->
+                  <label for="nameandlast"></label>
+                  <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6">Nombre y apellidos <br><i class="fa fa-user" aria-hidden="true"></i>
+                  </span>
+                  <input id="nameandlast" type="text" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6" name="name" placeholder="" pattern="[A-Za-z]{3,12}" onblur="placeholder=''" required value=""/>
+                      <div class="valid-feedback">
+                       <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto!
+                      </div>
+                      <div class="invalid-feedback">
+                        <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe un nombre válido.
+                      </div>
+                </div>
+
+                <!--email-->
+                <div class="input-group">
+                  <label for="email"></label>
+                  <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Email <br><i class="fa fa-envelope" aria-hidden="true"></i>
+                  </span>
+                  <input id="email" type="email" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" name="email" placeholder="" required value=""/>
+                      <div class="valid-feedback">
+                       <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto!
+                      </div>
+                      <div class="invalid-feedback">
+                       <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe un email válido.
+                      </div>
+
+                </div>
+                <br>
+
+                <!--contraseña-->
+                <div class="input-group">
+                 <label for="pass"></label>
+                  <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Contraseña <br><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                  </span>
+                  <input id="pass" type="password" name="password" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
+                      <div class="valid-feedback">
+                       <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto!
+                      </div>
+                      <div class="invalid-feedback">
+                       <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe una contraseña con mínimo de 6 caracteres.
+                      </div>
+                </div>
+                <br>
+                <!--repetir contraseña-->
+
+                <div class="input-group">
+                  <label for="pass2"></label>
+                  <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Repite contraseña <br><i class="fa fa-unlock-alt " aria-hidden="true"></i>
+                  </span>
+                  <input id="pass2" type="password" name="pass2" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="" minlength=6 required value=""/>
+                      <div class="valid-feedback">
+                       <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto!
+                      </div>
+                      <div class="invalid-feedback">
+                       <i class="fa fa-times" aria-hidden="true"></i>Por favor, escribe la misma contraseña.
+                      </div>
+                </div>
+                <br>
+                <!--fecha de nacimiento-->
+
+                <div class="input-group">
+                  <br/>
+                  <label for="date"></label>
+                  <span class="input-group-prepend input-group-text col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">Fecha de nacimiento <br><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+                  <input id="date" type="date" class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" name="fecha" required value=""/>
+                      <div class="valid-feedback">
+                       <i class="fa fa-check" aria-hidden="true"></i>¡Perfecto!
+                      </div>
+                      <div class="invalid-feedback">
+                       <i class="fa fa-times" aria-hidden="true"></i>Por favor, elige la fecha en la que naciste.
+                      </div>
+                </div>
+              </div>
+                <!--Elección de avatar-->
+                <input type="hidden" name="avatar" id="avatarSeleccionado" value=""/>
+                <!-- OPCION A-->
+                <div class="row alinear-centro">
+                    <h3>¿Quién eres? ¡Elige tu avatar!</h3>
+                </div>
+                <div id="avatares" class="row alinear-centro">
+                <br><!--FALTA AJUSTAR TAMAÑO DESDE SM  A XS-->
+                  <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar1" src=../doc/icons/avatar1.png></span>
+                  <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img  id="avatar2" src=../doc/icons/avatar2.png></span>
+                  <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar3" src=../doc/icons/avatar3.png></span>
+                  <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar4" src=../doc/icons/avatar4.png></span>
+                  <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar5" src=../doc/icons/avatar5.png></span>
+                  <span class="avatar col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4"><img id="avatar6" src=../doc/icons/avatar6.png></span>
+                </div>
+
+                <!--Boton Registrarse-->
+                <div class="row input-group alinear-centro">
+                    <label for="submit"></label>
+                    <input type="submit" id="submit" class="btn btn-info" name="registro" value="Registrarme"/>
+                </div>
+
+
+              </form>
+
+
+
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+  <!--Footer Bottom-->
+  <footer class="container footer footer-bottom">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center">&copy; Copyright 2018 - Bananers. Todos los derechos reservados.</p>
+          </div>
+        </div>  
+  </footer>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+    
+    <script src="https://use.fontawesome.com/271af51ffa.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

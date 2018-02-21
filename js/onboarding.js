@@ -46,6 +46,7 @@
            gusto = $("#onboarding-music").attr("name");
            console.log(gusto)
        });
+       
        $("#onboarding-cinema").click(function () {
            console.log("clicked-on-cinema");
            gusto = $("#onboarding-cinema").attr("name");

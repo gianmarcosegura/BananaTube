@@ -4,8 +4,8 @@ var imagenSeleccionada;
     
 function almacenaDato(event){
     imagenSeleccionada = $(event.target).attr('id');
-    $(".avatar img").removeClass("bordeRojo");
-    $(event.target).addClass("bordeRojo");
+    $(".avatar img").removeClass("borde");
+    $(event.target).addClass("borde");
     //window.localStorage.setItem("avatar",imagenSeleccionada);
     console.log(imagenSeleccionada);
     $("#avatarSeleccionado").val(imagenSeleccionada);

@@ -4,5 +4,9 @@
 }
 
 .hidden {
-    display:none;
+    display: none;
+}
+
+.cey {
+    background-color: #a9e2e3;
 }
