@@ -1,14 +1,10 @@
 body{
+    background-color: #f8f4c2;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Quicksand',
     sans-serif;
-}
-
-section{
-    height: auto;
-    background-color: #f8f4c2;
 }
 
 header{
@@ -18,7 +14,9 @@ header{
 .container2{
   margin: auto 3.5rem;
 }
-
+.container-fluid{
+    /*margin-left: 2.5rem;*/
+}
 .row{
     /*border: 1px solid black;*/
 }
@@ -35,7 +33,10 @@ header{
     text-align: right;
     align-self: center;
 }
+strong{
+    padding: 0;
 
+}
 .header_login a{
     color: #19535f
 }
@@ -67,6 +68,13 @@ header{
     border-top-right-radius: 0.4rem !important;
 }
 
+section{
+    height: auto;
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+}
+
+
 #cuerpo{
     flex: 1;
     padding-top: 2rem;
@@ -97,10 +105,12 @@ header{
 
 .blockquote{
   margin-top: 0.5rem;
+  
 }
 
 .footer{
     background-color: #454851;
+    margin-top: auto;
 }
 
 footer p{
