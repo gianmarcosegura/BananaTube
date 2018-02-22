@@ -14,12 +14,6 @@ header{
 .container2{
   margin: auto 3.5rem;
 }
-.container-fluid{
-    /*margin-left: 2.5rem;*/
-}
-.row{
-    /*border: 1px solid black;*/
-}
 
 .header_search{
     margin: auto;
@@ -70,10 +64,22 @@ strong{
 
 section{
     height: auto;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     margin-left: 2.5rem;
 }
 
+#sugerencias .embed-responsive .embed-responsive-item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    border: 0;
+}
+.embed-responsive-16by9::before {
+    padding-top: 55.25%;
+}
 
 #cuerpo{
     flex: 1;
@@ -99,9 +105,9 @@ section{
   color: grey !important;
 }
 
-.blockquote-footer::before {
+/*.blockquote-footer::before {
   content: none !important;
-}
+}*/
 
 .blockquote{
   margin-top: 0.5rem;
@@ -216,5 +222,28 @@ footer p{
     .container2{
       margin: auto 2rem;
     }
+    #sugerencias .embed-responsive .embed-responsive-item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border: 0;
+}
 
 }
+
+@media(max-width: 540px) {
+   #sugerencias .embed-responsive .embed-responsive-item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    border: 0;
+} 
+}
+    
+}()
