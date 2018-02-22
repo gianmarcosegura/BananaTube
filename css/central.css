@@ -53,3 +53,6 @@ a{
 .btn-primary{
     background-color: #19535f;
 }
+a:hover {
+    text-decoration: none;
+}
