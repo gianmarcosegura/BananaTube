@@ -4,7 +4,22 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-  res.send('lista de comentarios', { title: 'Un comentario' });
+  var listadoJSON=[
+    {
+        texto:"Lorem imput",
+        usuario:"pepe",
+        fecha:new Date(),
+        video:"pepaPig"
+    },
+    {
+        texto:"Lorem imput2",
+        usuario:"pepe2",
+        fecha:new Date(),
+        video:"pepaPig2"
+    }
+  ];
+  res.setHeader('Content-Type', 'application/json');
+  res.send(JSON.stringify(listadoJSON));
 });
 
 router.post("/",function(req,res){
