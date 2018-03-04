@@ -53,4 +53,17 @@ body{
   .bordeRojo{
       border: red solid 1px;
   }
-/* Falta ajustar los media query a versión teléfono. La idea es que haya dos avatares por fila. */
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+    border:4px dashed #000;
+    border-radius: 10%;}
+
+
+/* Ajustados los media query a versión teléfono. La idea es que haya dos avatares por fila. */
