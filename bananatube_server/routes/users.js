@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('Listado de usuarios');
+  var usuario={
+      
+  };
+    res.send('Listado de usuarios');
 });
 
 router.post('/', function(req, res, next) {
@@ -19,7 +22,7 @@ router.post('/:id', function(req, res, next) {
 });
 
 router.get('/delete/:id', function(req, res, next) {
-  res.send('Borrar usuario '+req.params.id);
+  res.send('Borrar usuario '+ req.params.id);
 });
 
 module.exports = router;
