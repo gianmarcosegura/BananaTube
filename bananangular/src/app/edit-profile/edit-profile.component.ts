@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditProfileComponent implements OnInit {
 
-  constructor() { }
+    fuente:string;
+  constructor() { 
+    this.fuente="assets/img/avatar5.png";
+  }
 
   ngOnInit() {
+  }
+  showAvatar (elemento){
+    console.log("Estoy cambiando el avatar");
+      console.log(elemento.src);
+    var newAvatar = elemento.src;
+    
+      this.fuente=newAvatar;
+    
   }
 
 }
