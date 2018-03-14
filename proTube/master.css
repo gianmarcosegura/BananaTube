@@ -190,6 +190,11 @@ footer p{
     font-size: 60px;
 }
 
+a#sube {
+    color: whitesmoke;
+}
+
+
 @media(max-width: 767px){
     h4{
       font-size: 1.75rem;
