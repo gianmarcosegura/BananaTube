@@ -7,59 +7,9 @@ body{
     sans-serif;
 }
 
-header{
-    background-color: #a7e3e2;
-}
 
-.container2{
-  margin: auto 3.5rem;
-}
-
-.header_search{
-    margin: auto;
-}
-
-.header_search1{
-    margin: 0.8rem auto;
-}
-
-.header_login{
-    text-align: right;
-    align-self: center;
-}
-strong{
-    padding: 0;
-
-}
-.header_login a{
-    color: #19535f
-}
-
-.header_logo{
-    align-self: center;
-}
-
-.header_logo img{
-    align-self: center;
-    width: 60%;
-}
 .card{
     line-height: 0.9rem;
-}
-
-.imageni{
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-.header_input{
-    border-top-left-radius: 0.4rem !important;
-    border-bottom-left-radius: 0.4rem !important;
-}
-
-.header_boton{
-    border-bottom-right-radius: 0.4rem !important;
-    border-top-right-radius: 0.4rem !important;
 }
 
 section{
@@ -114,17 +64,6 @@ section{
   
 }
 
-.footer{
-    background-color: #454851;
-    margin-top: auto;
-}
-
-footer p{
-    margin: 0.35rem auto;
-    color: white;
-    font-size: 0.825rem;
-}
-
 .blockquote video{
   margin-top: 1rem;
 }
@@ -154,9 +93,6 @@ footer p{
 
 
 /*Prueba*/
-#burger{
-    font-size: 2rem;
-}
 
 .boton-centro{
     text-align: center;
