@@ -1,0 +1,47 @@
+body {
+    background-color:#f8f4c2;
+}
+.login{
+    margin: 2.5rem;
+    justify-content: center;
+}
+.centrar{
+    justify-content: center;
+    text-align: center;
+}
+
+.alinear-centro{
+   justify-content: center;
+   text-align: center;
+   
+}
+
+.row{
+    margin-top: 3rem;
+}
+
+
+.borde{
+    border: black solid 4px;
+    border-style: dashed;
+    border-radius: 10%;
+}
+
+#avatares img{
+    width: 100%;
+}
+
+@media (max-width: 998px) {
+
+    }
+  }
+@media (max-width: 576px) {
+    
+  }
+  .alinear-centro{
+     justify-content: center;
+     text-align: center;
+  }
+  .bordeRojo{
+      border: red solid 1px;
+  }

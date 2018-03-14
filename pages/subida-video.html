@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://use.fontawesome.com/309f62dc86.js"></script>
+    <title>Iniciar Sesión</title>
+  </head>
+  <body>
+    <!--login-->
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row alinear-centro login">
+      <form class="needs-validation col-lg-8 " novalidate id="login" action="#" method="post" role="form"> <!-- añadido el role form --> <!--TODO: action -->
+        <div class="">
+        <h2 class="text-center">Sube tu vídeo</h2>
+        </div>
+        <br>
+        <!--Título-->
+        <div class="input-group">
+          <label for="title"></label>
+          <span class="input-group-text input-group-prepend col-xl-6 col-lg-6 col-md-6 col-sm-6">Título<br></span>
+          <input class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6" id="title" type="Text" name="title" placeholder="Título" required value="">
+          <div class="valid-feedback">
+              <i class="fa fa-check" aria-hidden="true"></i>
+              ¡Perfecto!
+          </div>
+          <div class="invalid-feedback">
+              <i class="fa fa-times" aria-hidden="true"></i>
+              Introduce un título.
+          </div>
+        </div>
+        
+        <!--Etiquetas-->
+        <div class="input-group"> 
+          <span class="input-group-text input-group-prepend col-xl-6 col-lg-6 col-md-6 col-sm-6">Etiquetas<br></span>
+          <input class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6" id="label" type="text" name="Etiquetas" placeholder="Etiquetas" value="">
+        </div>
+    
+        <!--Owner-->
+        <div class="input-group" style="visibility:hidden">
+            <label for="owner"></label>
+            <span class="input-group-text input-group-prepend col-xl-6 col-lg-6 col-md-6 col-sm-6"><br></span>
+            <input class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6" id="owner" type="text" name="owner" placeholder="" required value="">
+            <div class="valid-feedback">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                ¡Perfecto!
+            </div>
+            <div class="invalid-feedback">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                Introduce título.
+            </div>
+          </div>
+
+        <!--botones-->
+        <div class="input-group centrar" >
+            <label class="btn btn-primary">
+            Subir vídeo&hellip; <input type="file" style="display: none;">
+            </label>
+          </div>
+          <div class="input-group centrar">
+             <button type="submit" class="btn btn-info" name="button" value="Subir" role="button">Enviar</button>
+          </div>
+        <br>
+      </form>
+    </div>
+  </div>
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+  </body>
+  </html>
