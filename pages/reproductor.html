@@ -27,8 +27,22 @@
                       </blockquote>
                 </div>
 
-                <div id="comentarios" class="col-md-3 col-sm-12">
-                    
+                <div id="comentarios" class="col-md-4 col-sm-12 ">
+                    <form class="row" action="" method="POST" id="commentform">
+                        <div class="">
+                            <div id="comment-message">
+                                <textarea name = "comment" placeholder = "Comentario" id = "comment" ></textarea>
+                            </div>
+                            <div id="botonenviar"class="input-group">
+                                <label for="submit"></label>
+                                <input type="submit" id="commentsubmit" class="btn btn-info offset-md-9" name="dsubmit" value="Enviar"/>
+                            </div>
+                            
+                        </div> 
+                    </form>   
+                    <div id="comentariosrealizados">
+                        
+                    </div> 
                 </div>
             </div>
         </div>
