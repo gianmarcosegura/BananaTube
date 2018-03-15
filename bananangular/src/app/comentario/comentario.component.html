@@ -25,8 +25,11 @@
                             </div>
                         </div> 
                     </form>   
-                    <div #comentariosrealizados>
-                        
+                    <div id="VideoComentarios">
+                        <div *ngFor="let comentario of comentariosrealizados">
+                            <label>{{comentario.username}}</label>
+                            <label>{{comentario.mensaje}}</label>
+                        </div>
                     </div> 
                 </div>
             </div>
