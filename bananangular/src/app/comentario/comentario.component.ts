@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comentario.component.css']
 })
 export class ComentarioComponent implements OnInit {
-
+    
+  añadeComentario(comentario: string) {
+    if (comentario) {
+      comentariosrealizados.heroes.push(comentario);
+    }
+      
   constructor() { }
 
   ngOnInit() {

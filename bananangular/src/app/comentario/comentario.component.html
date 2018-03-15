@@ -21,12 +21,11 @@
                             </div>
                             <div id="botonenviar"class="input-group">
                                 <label for="submit"></label>
-                                <input type="submit" id="commentsubmit" class="btn btn-info offset-md-9" name="dsubmit" value="Enviar"/>
+                                <input (click)="añadeComentario(comentario.value)" type="submit" id="commentsubmit" class="btn btn-info offset-md-9" name="dsubmit" value="Enviar"/>
                             </div>
-                            
                         </div> 
                     </form>   
-                    <div id="comentariosrealizados">
+                    <div #comentariosrealizados>
                         
                     </div> 
                 </div>
