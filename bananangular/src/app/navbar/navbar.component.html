@@ -1,6 +1,6 @@
   <header>
 <!--HeaderLogOut-->   
-    <div class="container2">
+    <div class="container2" #logout *ngIf="!login">
       <div class="row">
         <div class="header_logo col-10 col-md-3">
          <a routerLink=''><img src="assets/img/logo.png" alt="logo_banatube"></a>
@@ -49,7 +49,7 @@
       </div>
     </div>
 <!--HeaderLogIn-->
-  <div class="container2">
+  <div class="container2" #login *ngIf="login">
         <div class="row">
             <div class="header_logo col-7 col-md-3">
               <a routerLink=""><img src="assets/img/logo.png" alt="logo_banatube"></a>
