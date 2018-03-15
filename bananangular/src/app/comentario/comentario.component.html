@@ -1,3 +1,36 @@
-<p>
-  comentario works!
-</p>
+<div class="container-fluid">
+      <section class="row">
+       <div class="col-12">
+            <div id="reproductor" class="row">
+                <div id="pantalla_grande" class="col-md-8 col-sm-12">
+                     <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                      </div>
+                      <blockquote class="blockquote">
+                        <p class="h6"><strong>FC Barcelona vs Real Madrid 5-0 Full Match 2010-11 HD 720p (English Commentary)</strong></p>
+                        <p class="lead">ElviraRub</p>
+                        <footer class="lead">32.123 visitas</footer>
+                      </blockquote>
+                </div>
+
+                <div id="comentarios" class="col-md-4 col-sm-12 ">
+                    <form class="row" action="" method="POST" id="commentform">
+                        <div class="">
+                            <div id="comment-message">
+                                <textarea name = "comment" placeholder = "Comentario" id = "comment" ></textarea>
+                            </div>
+                            <div id="botonenviar"class="input-group">
+                                <label for="submit"></label>
+                                <input type="submit" id="commentsubmit" class="btn btn-info offset-md-9" name="dsubmit" value="Enviar"/>
+                            </div>
+                            
+                        </div> 
+                    </form>   
+                    <div id="comentariosrealizados">
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+      </section>
+  </div>
