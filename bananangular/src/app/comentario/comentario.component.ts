@@ -22,7 +22,7 @@ export class ComentarioComponent implements OnInit {
     ];
   }
   
-  añadeComentario(comentario: string) {
+  anadeComentario(comentario: string) {
     if (comentario) {
       this.comentariosrealizados.push(comentario);
     }
