@@ -1,4 +1,5 @@
   <header>
+<!--HeaderLogOut-->   
     <div class="container2">
       <div class="row">
         <div class="header_logo col-10 col-md-3">
@@ -47,6 +48,164 @@
         </div>
       </div>
     </div>
+<!--HeaderLogIn-->
+  <div class="container2">
+        <div class="row">
+            <div class="header_logo col-7 col-md-3">
+              <a routerLink=""><img src="assets/img/logo.png" alt="logo_banatube"></a>
+            </div>
+            <div class="boton-centro d-md-none d-lg-none header_logo col-2 col-md-3">
+              <span id="burger" onclick="openNav()">&#9776;</span>
+            </div>
+            <div class="header_search1 col-md-4">
+              <div class="row">
+                <div class="header_search col-md-11">
+                  <form action="">
+                    <div class="input-group">
+                      <img class="imageni" src="assets/img/bananaSearch.png" alt="Banana buscadora">
+                      <label for="search"></label>
+                      <input type="text" class="header_input form-control" id="search" placeholder="Buscar">
+                      <div class="input-group-prepend">
+                        <button type="submit" class="header_boton input-group-text">Buscar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+<!--modal-->            
+      <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#theModal">
+    Open modal
+  </button>-->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="theModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header text-center">
+          <h4 class="modal-title text-center">SUBE TU VIDEO</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+  <form class="needs-validation col-lg-8 " novalidate id="login" action="#" method="post" role="form"> <!-- añadido el role form --> <!--TODO: action -->
+        <br>
+        <!--Título-->
+        <div class="input-group">
+          <label for="title"></label>
+          <span class="input-group-text input-group-prepend col-xl-6 col-lg-6 col-md-6 col-sm-6">Título<br></span>
+          <input class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6" id="title" type="Text" name="title" placeholder="Título" required value="">
+          <div class="valid-feedback">
+              <i class="fa fa-check" aria-hidden="true"></i>
+              ¡Perfecto!
+          </div>
+          <div class="invalid-feedback">
+              <i class="fa fa-times" aria-hidden="true"></i>
+              Introduce un título.
+          </div>
+        </div>
+        
+        <!--Etiquetas-->
+        <div class="input-group"> 
+          <span class="input-group-text input-group-prepend col-xl-6 col-lg-6 col-md-6 col-sm-6">Etiquetas<br></span>
+          <input class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6" id="label" type="text" name="Etiquetas" placeholder="Etiquetas" value="">
+        </div>
+    
+        <!--Owner-->
+        <div class="input-group" style="visibility:hidden">
+            <label for="owner"></label>
+            <span class="input-group-text input-group-prepend col-xl-6 col-lg-6 col-md-6 col-sm-6"><br></span>
+            <input class="form-control col-xl-6 col-lg-6 col-md-6 col-sm-6" id="owner" type="text" name="owner" placeholder="" required value="">
+            <div class="valid-feedback">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                ¡Perfecto!
+            </div>
+            <div class="invalid-feedback">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                Introduce título.
+            </div>
+          </div>
+
+        <!--botones-->
+        <div class="input-group centrar" >
+            <label class="btn btn-primary">
+            Subir vídeo&hellip; <input type="file" style="display: none;">
+            </label>
+          </div>
+          <div class="input-group centrar">
+             <button type="submit" class="btn btn-info" name="button" value="Subir" role="button">Enviar</button>
+          </div>
+        <br>
+      </form>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+            <label for="avatarSeleccionado"></label>
+                       <button class="btn btn-primary" data-toggle="modal" data-target="#theModal">Subir video</button>
+        <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+  
+<!--/modal-->            
+            <div class="boton-centro d-none d-md-block d-lg-none header_logo text-right col-2 col-md-3">
+              <span id="burger" onclick="openNav()">&#9776;</span>
+            </div>
+            <div class="d-none d-lg-block header_login col-md-3">
+              <div class="row">
+                <div class="col-6">
+                  <a data-toggle="collapse" href="#collapseExample"><img class="imageni" src="assets/img/avatar2.png"></a>
+                </div>
+                <div class="col-6">
+                  <a href="index.html" class="collapse" id="collapseExample">Cerrar sesión</a>
+                </div>
+              </div>
+          </div>
+<!--busquedaMobile-->
+       <div class="header_searchmobile col-12 d-md-none">
+          <div class="row sticky-top ">
+            <div class="header_search col-md-11">
+              <form action="">
+                <div class="input-group">
+                  <img class="imageni" src="assets/img/bananaSearch.png" alt="Banana buscadora">
+                  <label for="search"></label>
+                  <input type="text" class="header_input form-control" id="search" placeholder="Buscar">
+                  <div class="input-group-prepend">
+                    <button type="submit" class="header_boton input-group-text">Buscar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+<!--busquedaMobile-->                  
+        </div>
+    </div>
+<!--FinHeader-->               
   </header>
   
   <section id="cuerpo">
