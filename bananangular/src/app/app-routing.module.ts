@@ -4,8 +4,9 @@ import {InicioComponent} from './inicio/inicio.component';
 import {RegisterComponent} from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
-import { NavbarComponent } from './navbar/navbar.component'
-import { FooterComponent } from './footer/footer.component'
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { ComentarioComponent } from './comentario/comentario.component';
 
 const routes: Routes = [
   {path:"",
@@ -15,7 +16,10 @@ const routes: Routes = [
 {path:"login",
    component:LoginComponent},
 {path:"editprofile",
-   component:EditProfileComponent}
+   component:EditProfileComponent},
+    {path:"video",
+   component:ComentarioComponent}
+    
 ];
 
 

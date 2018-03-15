@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NavbaruserComponent } from './navbaruser/navbaruser.component';
 import { FooterComponent } from './footer/footer.component';
 import { ComentarioComponent } from './comentario/comentario.component';
 
@@ -23,7 +24,8 @@ import { ComentarioComponent } from './comentario/comentario.component';
     EditProfileComponent,
     NavbarComponent,
     FooterComponent,
-    ComentarioComponent
+    ComentarioComponent,
+    NavbaruserComponent
   ],
   imports: [
     BrowserModule,
