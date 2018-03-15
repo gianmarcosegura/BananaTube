@@ -10,7 +10,11 @@ import { LoginComponent } from './login/login.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+<<<<<<< HEAD
 import { ComentarioComponent } from './comentario/comentario.component';
+=======
+import { NavbaruserComponent } from './navbaruser/navbaruser.component';
+>>>>>>> 6ce320de83d3426ffa2a06976809841cc6ba9141
 
 
 
@@ -23,7 +27,11 @@ import { ComentarioComponent } from './comentario/comentario.component';
     EditProfileComponent,
     NavbarComponent,
     FooterComponent,
+<<<<<<< HEAD
     ComentarioComponent
+=======
+    NavbaruserComponent
+>>>>>>> 6ce320de83d3426ffa2a06976809841cc6ba9141
   ],
   imports: [
     BrowserModule,
