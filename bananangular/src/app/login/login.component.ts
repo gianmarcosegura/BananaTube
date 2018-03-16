@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { LogeService } from './loge.service';
+
 import { Observable } from 'rxjs/Observable';
 
 @Component({

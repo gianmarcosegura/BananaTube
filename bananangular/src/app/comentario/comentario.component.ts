@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ComentarioComponent implements OnInit {
     
   comentariosrealizados:[any];
+    comentario:any;
   
   constructor() { 
+    this.comentario={
+        username:"Pepe",
+        mensaje:""
+    };
     this.comentariosrealizados=[
         {
             username:"Pepe",
@@ -22,9 +27,14 @@ export class ComentarioComponent implements OnInit {
     ];
   }
   
-  anadeComentario(comentario: string) {
-    if (comentario) {
-      this.comentariosrealizados.push(comentario);
+  anadeComentario() { 
+      console.log("añadecomentario");
+    if (this.comentario.mensaje!="") {
+      this.comentariosrealizados.push(this.comentario);
+        this.comentario={
+            username:"Pepe",
+            mensaje:""
+        };
     }
   }
   

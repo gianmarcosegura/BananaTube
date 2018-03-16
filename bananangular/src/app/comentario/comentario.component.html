@@ -14,20 +14,21 @@
                 </div>
 
                 <div id="comentarios" class="col-md-4 col-sm-12 ">
-                    <form class="row" action="" method="POST" id="commentform">
+                    <form class="row" (ngSubmit)="anadeComentario()" #registerForm="ngForm" id="commentform">
                         <div class="">
                             <div id="comment-message">
-                                <textarea name = "comment" placeholder = "Comentario" id = "comment" ></textarea>
+                                <textarea #name="ngModel" required [(ngModel)]="comentario.mensaje" name = "comment" placeholder = "Comentario" id = "comment" ></textarea>
                             </div>
                             <div id="botonenviar"class="input-group">
                                 <label for="submit"></label>
-                                <input (click)="anadeComentario(comentario.value)" type="submit" id="commentsubmit" class="btn btn-info offset-md-9" name="dsubmit" value="Enviar"/>
+                                <input (submit)="anadeComentario()" type="submit" id="commentsubmit" class="btn btn-info offset-md-9" name="dsubmit" value="Enviar"/>
                             </div>
                         </div> 
-                    </form>   
+                    </form> 
+                    <!--iv>{{comentario |json}}</div-->  
                     <div id="VideoComentarios">
                         <div *ngFor="let comentario of comentariosrealizados">
-                            <label>{{comentario.username}}</label>
+                            <label>{{comentario.username}}:</label>
                             <label>{{comentario.mensaje}}</label>
                         </div>
                     </div> 
